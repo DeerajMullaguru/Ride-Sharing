@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #feb200;
+    padding: 10px 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header .head-wrap {
+    display: flex;
+    align-items: center;
+}
+
+header .head-wrap .colleft {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header .head-wrap .colright {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header .head-wrap .colright h3 {
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    text-align: right;
+}
+
+header .head-wrap .colright h3 i {
+    margin-left: 3px;
+}
+
+header .head-wrap .colright .menu ul {
+    background-color: #fff;
+    color: #11133e;
+    position: absolute;
+    left: auto;
+    right: 30px;
+    top: 50px;
+    width: 170px;
+    padding: 10px 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #fff;
+}
+
+header .head-wrap .colright .menu ul li a {
+    color: #000;
+    font-size: 16px;
+}
+
+.left-menu {
+    width: 300px;
+    min-height: 100vh;
+    background-color: #000;
+    position: fixed;
+    top: 69px;
+}
+
+.backend {
+    background-color: #f3f3f3;
+}
+
+.left-menu .image {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.left-menu .image h3 {
+    color: #fff;
+}
+
+.left-menu img {
+    max-width: 100px;
+    border-radius: 100px;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+.left-menu ul {
+    padding: 30px 0px 30px 0px;
+}
+
+.left-menu ul a {
+    display: flex;
+    border-bottom: 1px solid #535151;
+    padding: 18px 0 18px 16px;
+    align-items: center;
+}
+
+.left-menu ul a i {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.left-menu ul a li {
+    color: #fff;
+    font-size: 16px;
+    transition: 0.6s;
+}
+
+.left-menu ul .active {
+    background-color: #fff;
+}
+
+.left-menu ul .active i {
+    color: #000;
+}
+
+.left-menu ul .active li {
+    color: #000;
+}
+
+.dashboard {
+    padding: 120px 0px 40px 330px;
+    width: auto;
+    min-height: 100vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.left-menu ul a:hover {
+    background-color: #fff;
+}
+
+.left-menu ul a:hover i {
+    color: #000;
+}
+
+.left-menu ul a:hover li {
+    color: #000;
+}
+
+.dashboard .title h2 {
+    color: #111111;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.dashboard .booking-wrap {
+    display: flex;
+    margin-left: -15px;
+    margin-bottom: 60px;
+}
+
+.dashboard .booking-box {
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dashboard .booking-box .info {
+    background: rgba(98, 89, 202, .15);
+    color: #483ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 40px 5px rgb(0 0 0/3%);
+}
+
+.dashboard .booking-box .info.box2 {
+    background: rgba(14, 198, 198, .15);
+    color: #33a466;
+}
+
+.dashboard .booking-box .info.box3 {
+    background: rgba(219, 158, 13, 0.15);
+    color: #feb200;
+}
+
+.dashboard .booking-box .info h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.dashboard .booking-box .info span {
+    font-size: 18px;
+}
+
+.dashboard .booking-box .info-icon i {
+    width: 65px;
+    height: 65px;
+    line-height: 67px;
+    font-size: 30px;
+    background-color: #483ccc;
+    color: #fff;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.dashboard .booking-box .info.box2 .info-icon i {
+    background-color: #33a466;
+}
+
+.dashboard .booking-box .info.box3 .info-icon i {
+    background-color: #feb200;
+}
+
+.dashboard .booking-table {
+    padding-right: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: rgba(1, 1, 1, .09) 0px 0px 11px 0;
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+td,
+th {
+    padding: 13px;
+    border-bottom: 1px solid#ddd;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+th {
+    background: #feb200!important;
+    color: #000;
+    font-size: 18px;
+}
+
+.booking-table table tr .cab {
+    display: flex;
+    align-items: center;
+}
+
+.booking-table table tr .cab img {
+    max-width: 130px;
+    margin-right: 10px;
+}
+
+.booking-table table tr .cab h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.booking-table table tr .cab span {
+    font-size: 16px;
+}
+
+.booking-table table tr .badge {
+    padding: 2px 4px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.booking-table table tr .badge.badge-primary {
+    background: #dbf7fd;
+    color: #0dcaf0;
+}
+
+.booking-table table tr .badge.badge-danger {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.booking-table table tr .btn {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.booking-table table tr .btn.accept {
+    background-color: #1d8368;
+    color: #fff;
+}
+
+.booking-table table tr .btn.decline {
+    background-color: #c44343;
+    color: #fff;
+}
+
+.booking-table table tr .badge.badge-success {
+    background: #dcfce7;
+    color: #22c79c;
+}
+
+.booking-table table tr .badge.badge-info {
+    background: #f3e8ff;
+    color: #a855f7;
+}
+
+.backend .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    margin-bottom: 70px;
+}
+
+.backend .title input {
+    outline: none;
+    margin-right: 20px;
+    padding: 10px 12px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    position: relative;
+}
+
+.backend .title .title-right {
+    display: flex;
+    align-items: center;
+}
+
+.backend .title .title-right .search {
+    position: relative;
+}
+
+.btn {
+    color: #111111;
+    padding: 14px 25px;
+    border-radius: 50px;
+    text-align: center;
+    transition: all .7s;
+    border: none;
+    font-size: 16px;
+    background-color: #feb200;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.backend .title .title-right .search i {
+    position: absolute;
+    top: 13px;
+    right: 35px;
+    color: #ced4da;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination ul {
+    display: flex;
+    align-items: center;
+}
+
+.pagination ul li a {
+    width: 40px;
+    height: 40px;
+    background-color: #111111;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+    display: block;
+    margin: 5px;
+}
+
+.pagination ul li .active {
+    background-color: #feb200;
+}
+
+.pagination ul li a:hover {
+    background-color: #feb200;
+}
+
+form {
+    background-color: #fff;
+    box-shadow: rgba(1, 1, 1, .09) 0px 0px 11px 0;
+    padding: 40px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.booking-form form {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #111111;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+form .input-grid {
+    display: flex;
+    gap: 10px;
+}
+
+form .input-grid .input-box {
+    width: 50%;
+}
+
+form .btn {
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.backend.login {
+    background-image: url(../img/login.jpg);
+    padding-top: 300px;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.backend.login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.2;
+}
+
+.backend.login form {
+    background-color: #000;
+    max-width: 600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.backend.login form label {
+    color: #fff;
+}
+
+.backend.login form .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.backend.login form h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+.backend.login form p {
+    color: #fff;
+    text-align: center;
+}
+
+.backend.login form p a {
+    color: #feb200
+}
+
+.profile {
+    display: flex;
+    margin-left: -15px;
+}
+
+.profile .profile-info {
+    width: 60%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.profile .change-password {
+    width: 40%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.profile form h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.dashboard .title.pay {
+    align-items: inherit;
+}
+
+.title.pd {
+    padding-right: 0px;
+}
+
+padding-right: 0px;
+
+}
